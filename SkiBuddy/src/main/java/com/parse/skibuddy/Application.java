@@ -11,7 +11,7 @@ public class Application extends android.app.Application {
     public static final boolean APPDEBUG = false;
 
     // Debugging tag for the application
-    public static final String APPTAG = "AnyWall";
+    public static final String APPTAG = "SkiBuddy";
 
     // Used to pass location from MainActivity to PostActivity
     public static final String INTENT_EXTRA_LOCATION = "location";
@@ -33,8 +33,8 @@ public class Application extends android.app.Application {
         super.onCreate();
 
         ParseObject.registerSubclass(SkiBuddyEvent.class);
-        Parse.initialize(this, "YOUR_PARSE_APPLICATION_ID",
-                "YOUR_PARSE_CLIENT_KEY");
+        Parse.initialize(this, "du1xZEAelipOn1x1HonpwAvUn2IDM3TRQuoSHpwe",
+                "T7VsDcjjZ9uPPBlV1ujQ7NL6jGxgWPSu7jfH2E8Y");
 
         preferences = getSharedPreferences("com.parse.anywall", Context.MODE_PRIVATE);
 
